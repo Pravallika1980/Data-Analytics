@@ -1,0 +1,17 @@
+ats<-c(10,20,30,40,50,60,70,80)
+print("Dataset")
+print(data)
+mean_value<-mean(data)
+print(paste("Mean:",mean_value))
+median_value<-median(data)
+print(paste("Median:",median_value))
+mode_function<-function(x){
+  uniq_value<-unique(x)
+  uniq_value[which.max(tabulate(match(x,uniq_value)))]
+}
+mode_value<-mode_function(data)
+print(paste("Mode:",mode_value))
+max_value<-max(data)
+print(paste("Max:",max_value))
+min_value<-min(data)
+print(paste("Min:",min_value))
